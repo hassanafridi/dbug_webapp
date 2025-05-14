@@ -11,3 +11,11 @@
         pkgs.ninja
     ];
 }
+
+
+{ pkgs ? import <nixpkgs> {} }:
+pkgs.mkShell {
+  buildInputs = [
+    pkgs.dart_3_5_0
+  ];
+}
