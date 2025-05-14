@@ -8,7 +8,6 @@ channel = "stable-24_05"
 run = ["sh", "-c", "flutter run"]
 
 [workflows]
-runButton = "Run Flutter"
 
 [[workflows.workflow]]
 name = "Run Flutter"
