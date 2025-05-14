@@ -1,0 +1,23 @@
+{
+  "home": "Ana Sayfa",
+  "settings": "Ayarlar",
+  "notifications": "Bildirimler",
+  "dark_mode": "Karanlık Mod",
+  "dark_mode_msg": "Karanlık Mod Açık & Kapalı",
+  "list_grid": "Liste Veya Tablo",
+  "list": "Liste",
+  "grid": "Tablo",
+  "about": "Hakkımızda",
+  "version": "Versiyon",
+  "privacy_policy": "Privacy Policy",
+  "term_con": "Terms & Conditions",
+  "share": "Share App",
+  "rate": "Rate Us",
+  "search": "Search",
+  "language":"Language",
+  "language_name":"Türkçe",
+  "choose_lang":"Choose the language",
+  "confirm":"Confirm",
+  "try_search":"Try Search",
+  "try_demo":"Try Demo"
+}

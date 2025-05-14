@@ -1,0 +1,23 @@
+{
+  "home": "হোম",
+  "settings": "সেটিংস",
+  "notifications": "বিজ্ঞপ্তি",
+  "dark_mode": "ডার্ক মোড",
+  "dark_mode_msg": "ডার্ক মোড চালু এবং বন্ধ",
+  "list_grid": "লিস্ট বা গ্রিড",
+  "list": "লিস্ট",
+  "grid": "গ্রিড",
+  "about": "সম্পর্কিত",
+  "version": "সংস্করণ",
+  "privacy_policy": "গোপনীয়তা নীতি",
+  "term_con": "শর্তাবলী",
+  "share": "Share App",
+  "rate": "Rate Us",
+  "search": "অনুসন্ধান",
+  "language":"ভাষা",
+  "language_name":"বাংলা",
+  "choose_lang":"ভাষা নির্বাচন করুন",
+  "confirm":"নিশ্চিত",
+  "try_search":"অনুসন্ধানের চেষ্টা",
+  "try_demo":"ডেমো চেষ্টা করুন"
+}

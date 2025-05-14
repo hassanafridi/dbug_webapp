@@ -1,0 +1,23 @@
+{
+  "home": "Home",
+  "settings": "Settings",
+  "notifications": "Notifications",
+  "dark_mode": "Dark Mode",
+  "dark_mode_msg": "Dark mode on & off",
+  "list_grid": "List or Grid",
+  "list": "List",
+  "grid": "Grid",
+  "about": "About",
+  "version": "Version",
+  "privacy_policy": "Privacy Policy",
+  "term_con": "Terms & Conditions",
+  "share": "Share App",
+  "rate": "Rate Us",
+  "search": "Search",
+  "language":"Language",
+  "language_name":"Español",
+  "choose_lang":"Choose the language",
+  "confirm":"Confirm",
+  "try_search":"Try Search",
+  "try_demo":"Try Demo"
+}

@@ -1,0 +1,16 @@
+{
+  "bn": [
+    "ooops",
+    "no_internet_msg"
+  ],
+
+  "es": [
+    "ooops",
+    "no_internet_msg"
+  ],
+
+  "tr": [
+    "ooops",
+    "no_internet_msg"
+  ]
+}
