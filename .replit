@@ -1,0 +1,20 @@
+modules = ["c-clang14", "cpp-clang14", "web", "dart-3.5"]
+run = "flutter run"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "flutter run"]
+
+[workflows]
+runButton = "Run Flutter"
+
+[[workflows.workflow]]
+name = "Run Flutter"
+author = 42689552
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "flutter run -d web-server --web-hostname=0.0.0.0 --web-port=5000"
