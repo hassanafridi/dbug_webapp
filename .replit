@@ -1,74 +1,19 @@
-
-modules = ["dart-3.5", "web"]
-run = "flutter run -d web-server --web-hostname=0.0.0.0 --web-port=5000"
+modules = ["c-clang14", "cpp-clang14", "web", "dart-3.5"]
+run = "flutter run"
 
 [nix]
 channel = "stable-24_05"
 
 [deployment]
-run = ["sh", "-c", "flutter run -d web-server --web-hostname=0.0.0.0 --web-port=5000"]
+run = ["sh", "-c", "flutter run"]
 
 [workflows]
-runButton = "Flutter Web Dev"
+runButton = "Run Flutter"
 
 [[workflows.workflow]]
 name = "Run Flutter"
 author = 42689552
 mode = "sequential"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "flutter config --enable-web"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "flutter clean"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "flutter pub get"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "flutter run -d web-server --web-hostname=0.0.0.0 --web-port=5000"
-
-[[workflows.workflow]]
-name = "Flutter Web"
-author = 42689552
-mode = "sequential"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "flutter config --enable-web"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "flutter clean"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "flutter pub get"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "flutter run -d web-server --web-hostname=0.0.0.0 --web-port=5000"
-
-[[workflows.workflow]]
-name = "Flutter Web Dev"
-author = 42689552
-mode = "sequential"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "flutter clean"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "flutter config --enable-web"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "flutter pub get"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
