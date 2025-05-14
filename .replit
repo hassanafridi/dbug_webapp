@@ -1,11 +1,12 @@
-modules = ["c-clang14", "cpp-clang14", "web", "dart-3.5"]
-run = "flutter run"
+
+modules = ["dart-3.5", "web"]
+run = "flutter run -d web-server --web-hostname=0.0.0.0 --web-port=5000"
 
 [nix]
 channel = "stable-24_05"
 
 [deployment]
-run = ["sh", "-c", "flutter run"]
+run = ["sh", "-c", "flutter run -d web-server --web-hostname=0.0.0.0 --web-port=5000"]
 
 [workflows]
 runButton = "Run Flutter"
