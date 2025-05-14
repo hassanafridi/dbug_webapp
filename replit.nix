@@ -2,6 +2,8 @@
 { pkgs }: {
     deps = [
         pkgs.flutter
-        pkgs.dart_3_5
+        pkgs.dart
+        pkgs.pkg-config
+        pkgs.gtk3
     ];
 }

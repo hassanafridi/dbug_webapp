@@ -64,10 +64,6 @@ args = "flutter config --enable-web"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "flutter clean"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
 args = "flutter pub get"
 
 [[workflows.workflow.tasks]]
