@@ -9,10 +9,31 @@ channel = "stable-24_05"
 run = ["sh", "-c", "flutter run -d web-server --web-hostname=0.0.0.0 --web-port=5000"]
 
 [workflows]
-runButton = "Run Flutter"
+runButton = "Flutter Web"
 
 [[workflows.workflow]]
 name = "Run Flutter"
+author = 42689552
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "flutter config --enable-web"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "flutter clean"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "flutter pub get"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "flutter run -d web-server --web-hostname=0.0.0.0 --web-port=5000"
+
+[[workflows.workflow]]
+name = "Flutter Web"
 author = 42689552
 mode = "sequential"
 
