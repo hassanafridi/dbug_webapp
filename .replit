@@ -18,7 +18,15 @@ mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "flutter upgrade"
+args = "flutter config --enable-web"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "flutter clean"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "flutter pub get"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
